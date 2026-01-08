@@ -1,0 +1,11 @@
+**Linear algebra stuff
+
+
+
+*Linear_system_analyzer.py:
+
+m = equation
+n = variables
+
+- Underdetermined if m < n
+- overdetermined  if m > n 
