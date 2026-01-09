@@ -1,11 +1,12 @@
 from sympy import Matrix, symbols
 
 # -------- INDSÆT AUGMENTED MATRIX --------
+#skal indsætte coefficient og constant
 A = Matrix([
-    [1,  2, -1,  8,  2],
-    [2,  3, -1, 11,  3],
-    [-2, 0, -3, -3,  4],
-    [1,  0,  5,  3,  4]
+    [3,2,1,8],
+    [3,3,-1,4],
+    [2,2,2,4],
+
 ])
 
 num_vars = A.cols - 1

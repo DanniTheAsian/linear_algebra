@@ -1,5 +1,7 @@
 **Linear algebra stuff
 
+Back substition:
+Ux=b
 
 
 *Linear_system_analyzer.py:
