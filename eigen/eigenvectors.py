@@ -19,7 +19,7 @@ def eigenvectors_matrix(matrix):
 if __name__ == "__main__":
     # Example matrix
     A = [
-        [2, 1],
+        [7, 6],
         [1, 2]
     ]
 
