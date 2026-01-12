@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: matrix dimensions, matrix multiplication
+
 def dimension_checker(A=None, B=None, x=None):
     """
     Checks whether matrix products are defined and explains why.

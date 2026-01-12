@@ -1,5 +1,7 @@
 from sympy import symbols, Matrix, simplify
 
+# Keywords: determinant, matrix rules
+
 # Definér symboler
 a, b, c, p, q, r, x, y, z = symbols('a b c p q r x y z')
 

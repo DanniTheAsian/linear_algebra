@@ -1,5 +1,6 @@
 from sympy import Matrix
 
+# Keywords: diagonalization, eigenvalues, eigenvectors
 
 def diagonalize_matrix(matrix):
     """

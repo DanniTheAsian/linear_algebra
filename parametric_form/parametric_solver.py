@@ -1,5 +1,7 @@
 from sympy import symbols, Eq, solve, Matrix
 
+# Keywords: parametric solution, free variables
+
 # Variabler og parameter
 x1, x2, t = symbols('x1 x2 t')
 

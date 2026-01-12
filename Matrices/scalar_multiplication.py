@@ -1,5 +1,7 @@
 from typing import List, Union
 
+# Keywords: scalar multiplication, matrix algebra
+
 Number = Union[int, float]
 Matrix = List[List[Number]]
 

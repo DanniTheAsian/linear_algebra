@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: linear systems, consistent, inconsistent, overdetermined, underdetermined
+
 def analyze_linear_system(A):
     """
     Analyserer et lineært ligningssystem givet ved en augmented matrix.

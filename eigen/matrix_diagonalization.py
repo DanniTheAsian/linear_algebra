@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols, pprint, Rational
 
+# Keywords: diagonalization, eigenvectors, RREF
+
 def eigenvector_via_rref(A, lam):
     """
     Computes an eigenvector by solving (A - λI)x = 0 using RREF.

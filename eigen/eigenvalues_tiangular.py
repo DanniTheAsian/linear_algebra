@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols, det, pprint
 
+# Keywords: eigenvalues, triangular matrix
+
 def eigenvalues_upper_triangular(U):
     """
     Computes eigenvalues of an upper triangular matrix

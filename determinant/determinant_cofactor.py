@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: determinant, cofactor, Laplace expansion, adjungeret matrix
+
 def determinant_cofactor_expansion(A, axis="col", index=0):
     """
     Computes det(A) using cofactor expansion (Laplace expansion)

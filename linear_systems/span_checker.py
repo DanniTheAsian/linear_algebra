@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols
 
+# Keywords: span, linear combination, basis
+
 def span_checker(vectors, target):
     """
     Checks whether target is in the span of the given vectors.

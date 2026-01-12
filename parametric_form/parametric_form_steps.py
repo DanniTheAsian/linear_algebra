@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols
 
+# Keywords: parametric form, free variables, lead variables
+
 def parametric_form(A, b):
     n = A.shape[1]
     vars = symbols(f'x1:{n+1}')

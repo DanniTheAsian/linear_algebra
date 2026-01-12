@@ -1,6 +1,8 @@
 
 from sympy import Matrix
 
+# Keywords: adjugate matrix, cofactor, inverse matrix
+
 def adjugate_general(A):
     """
     Computes the adjugate matrix of a square matrix A

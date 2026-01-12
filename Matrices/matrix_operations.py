@@ -1,4 +1,6 @@
 
+# Keywords: matrix operations, matrix multiplication, matrix addition, skalarmultiplikation
+
 matrix = [[1,2,1],[1,2,1],[1,2,1],[1,2,1]]
 
 matrix1 = [[1,1,0],[1,0,1],[0,1,0]]

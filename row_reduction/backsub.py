@@ -1,3 +1,5 @@
+# Keywords: back substitution, upper triangular matrix
+
 def back_substitution(U, b):
     """
     Løser Ux = b ved backsubstitution.

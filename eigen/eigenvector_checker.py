@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: eigenvector, eigenvalue
+
 def verify_eigenvector(A, v):
     """
     Verify whether v is an eigenvector of A by checking Av = λv.

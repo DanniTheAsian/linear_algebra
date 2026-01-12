@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: inverse matrix, invertible, determinant
+
 def inverse_matrix(A):
     """
     Beregner den inverse af en matrix A, hvis den findes.

@@ -2,6 +2,8 @@
 import numpy as np 
 from sympy import Matrix, pprint
 
+# Keywords: augmented matrix, linear systems
+
 def main():
 
     print("=== Augumented Matrix ===\n")

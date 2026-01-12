@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols
 
+# Keywords: REF, RREF, rank, Gaussian elimination
+
 # -------- INDSÆT AUGMENTED MATRIX --------
 A = Matrix([
     [3,2,5],

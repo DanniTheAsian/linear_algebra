@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols
 
+# Keywords: back substitution, REF
+
 def back_substitution(U):
     """
     U: augmented matrix i REF (n x (n+1))

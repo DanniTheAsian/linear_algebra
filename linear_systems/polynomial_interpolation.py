@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols, pprint
 
+# Keywords: polynomial interpolation, Vandermonde matrix
+
 def polynomial_interpolation(points):
     """
     Finds the interpolating polynomial of degree n-1

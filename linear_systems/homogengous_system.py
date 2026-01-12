@@ -1,5 +1,6 @@
 from sympy import Matrix
 
+# Keywords: homogeneous system, trivial solution, nontrivial solution
 
 def analyze_homogeneous_system(A):
     """

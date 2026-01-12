@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols
 
+# Keywords: consistent, inconsistent, linear systems
+
 # -------- INDSÆT AUGMENTED MATRIX --------
 #skal indsætte coefficient og constant
 A = Matrix([

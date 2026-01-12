@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: symmetric matrix, skew-symmetric matrix, decomposition, matrix algebra, transponering
+
 def symmetric_skew_decomposition(A):
     """
     Decomposes a square matrix A into:

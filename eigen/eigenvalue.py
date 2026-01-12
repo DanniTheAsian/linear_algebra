@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: eigenvalues, characteristic equation
+
 def eigenvalues_matrix(matrix):
     A = Matrix(matrix)
     return A.eigenvals()

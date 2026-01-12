@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: subspace, span
+
 def is_subspace_span(vectors):
     """
     Span(vectors) er altid et underrum (hvis vektorerne har samme dimension)

@@ -1,5 +1,7 @@
 from sympy import Matrix
 
+# Keywords: number of solutions, unique solution, infinite solutions, no solution
+
 def classify_system(A, b):
     """
     Classify a linear system Ax = b.

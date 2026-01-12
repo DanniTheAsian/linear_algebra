@@ -1,5 +1,6 @@
 from sympy import Matrix
 
+# Keywords: determinant, invertible, matrix
 
 def determinant_matrix(matrix):
     """

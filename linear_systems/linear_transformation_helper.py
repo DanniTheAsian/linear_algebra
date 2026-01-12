@@ -1,5 +1,7 @@
 from sympy import Matrix, symbols
 
+# Keywords: linear transformation, linearity, basis vectors
+
 def linear_transformation_helper(x1, x2, y, Tx1, Tx2):
     """
     Computes T(y) using linearity:

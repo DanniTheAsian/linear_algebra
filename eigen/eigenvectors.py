@@ -1,5 +1,6 @@
 from sympy import Matrix
 
+# Keywords: eigenvectors, eigenvalues
 
 def eigenvectors_matrix(matrix):
     """
