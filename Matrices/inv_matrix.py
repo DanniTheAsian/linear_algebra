@@ -18,8 +18,8 @@ def inverse_matrix(A):
 
 # -------- EKSEMPEL --------
 A = Matrix([
-    [1, 2],
-    [3, 4]
+    [120, 140],
+    [130, 130]
 ])
 
 print("Matrix A:")
