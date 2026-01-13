@@ -4,9 +4,11 @@ from sympy import Matrix, symbols
 
 # -------- INDSÆT AUGMENTED MATRIX --------
 A = Matrix([
-    [3,2,5],
-    [2,0,6],
-    [-1,5,-13],
+    [1,-1,0,0,160],
+    [0,1,-1,0, -40],
+    [0,0,1,-1, 210],
+    [-1,0,0,1,-330],
+
 ])
 
 # Antal variable

@@ -1,14 +1,10 @@
 from sympy import Matrix, symbols
 
-# Keywords: consistent, inconsistent, linear systems
-
 # -------- INDSÆT AUGMENTED MATRIX --------
-#skal indsætte coefficient og constant
 A = Matrix([
-    [3,2,1,8],
-    [3,3,-1,4],
-    [2,2,2,4],
-
+    [3, 2, 1, 8],
+    [3, 3, -1, 4],
+    [2,  2, 2, 4]
 ])
 
 num_vars = A.cols - 1
@@ -27,16 +23,16 @@ print(rref_matrix)
 print("\nRank(A) =", rank_A)
 print("Rank([A|b]) =", rank_aug)
 
-# -------- LOGIK --------
 print("\nResultat:")
 
 if rank_A < rank_aug:
-    print("→ INCONSISTENT system (ingen løsning)")
+    print("→ INKONSISTENT system (ingen løsning)")
 
 elif rank_A == rank_aug == num_vars:
-    print("→ CONSISTENT med Entydig (unik) løsning\n")
+    print("→ KONSISTENT med ENTydig (unik) løsning\n")
     for i, pivot_col in enumerate(pivots):
-        print(f"{variables[pivot_col]} = {rref_matrix[i, -1]}")
+        if pivot_col < num_vars:
+            print(f"{variables[pivot_col]} = {rref_matrix[i, -1]}")
 
 else:
-    print("→ CONSISTENT med UENDELIGT mange løsninger")
+    print("→ KONSISTENT med UENDELIGT mange løsninger")
