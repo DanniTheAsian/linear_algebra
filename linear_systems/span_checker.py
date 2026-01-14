@@ -1,92 +1,81 @@
-"""Vector Span Membership Checker Module.
-
-Determines whether a target vector is in the span of given basis vectors
-by checking if it can be written as a linear combination.
-
-Keywords:
-    span, linear combination, basis, subspace, vector representation,
-    span membership, linear independence
-"""
 from sympy import Matrix, symbols
 
 
 def span_checker(vectors, target):
     """
-    Checks whether target is in the span of the given vectors.
-
-    Args:
-        vectors (list[list or tuple]): Basis vectors [x1, x2, ..., xk]
-        target (list or tuple): Target vector v
-
-    Prints:
-        - Whether target is in the span
-        - The linear combination if it exists
-        - Parametric solution if infinite solutions
+    Checks whether target is in the span of given vectors
+    and explicitly inserts the coefficients.
     """
 
-    # Number of vectors
     k = len(vectors)
-
-    # Create symbols for coefficients
     coeffs = symbols(f'c1:{k+1}')
 
-    # Build matrix with vectors as columns
+    # A * c = v
     A = Matrix(vectors).T
     b = Matrix(target)
-
-    # Augmented matrix
     Aug = A.row_join(b)
 
     print("Augmented matrix [A | v]:")
     print(Aug)
     print()
 
-    # RREF
-    rref_matrix, pivots = Aug.rref()
+    RREF, pivots = Aug.rref()
 
-    print("RREF of augmented matrix:")
-    print(rref_matrix)
+    print("RREF:")
+    print(RREF)
     print()
 
-    # Check consistency
-    rows, cols = rref_matrix.shape
-    for i in range(rows):
-        if all(rref_matrix[i, j] == 0 for j in range(cols - 1)) and rref_matrix[i, -1] != 0:
-            print("❌ Target vector is NOT in the span (inconsistent system).")
+    rows, cols = RREF.shape
+
+    # ---------- Konsistens ----------
+    for r in range(rows):
+        if all(RREF[r, c] == 0 for c in range(cols - 1)) and RREF[r, -1] != 0:
+            print("❌ Target vector is NOT in the span.")
             return
 
-    print("✅ Target vector IS in the span.")
+    print("✅ Target vector IS in the span.\n")
 
-    # Read solutions
     free_vars = set(range(k)) - set(pivots)
+    if free_vars:
+        print("✔ Infinite solutions (parametric form).")
+        return
 
-    if not free_vars:
-        print("✔ Unique linear combination:")
-        for i, c in enumerate(coeffs):
-            value = rref_matrix[i, -1]
-            print(f"{c} = {value}")
+    # ---------- Unik løsning ----------
+    solution = {}
+
+    print("✔ Coefficients:")
+    for col in pivots:
+        row = pivots.index(col)
+        solution[coeffs[col]] = RREF[row, -1]
+        print(f"{coeffs[col]} = {RREF[row, -1]}")
+
+    # ---------- Indsæt værdier ----------
+    print("\n✔ Insert coefficients into linear combination:")
+
+    combo = Matrix.zeros(len(target), 1)
+    for i in range(k):
+        term = solution[coeffs[i]] * Matrix(vectors[i])
+        print(f"{solution[coeffs[i]]} * {Matrix(vectors[i]).T}")
+        combo += term
+
+    print("\nResulting vector:")
+    print(combo)
+
+    print("\nTarget vector:")
+    print(b)
+
+    if combo == b:
+        print("\n✅ Verified: Linear combination equals target vector.")
     else:
-        print("✔ Infinite solutions (parametric form):")
-        for i, c in enumerate(coeffs):
-            if i in pivots:
-                expr = rref_matrix[pivots.index(i), -1]
-                for j in free_vars:
-                    expr -= rref_matrix[pivots.index(i), j] * coeffs[j]
-                print(f"{c} = {expr}")
-            else:
-                print(f"{c} = free parameter")
-
-    print()
-    print("Linear combination:")
-    combo = sum(coeffs[i] * Matrix(vectors[i]) for i in range(k))
-    print("v =", combo)
+        print("\n❌ Something went wrong.")
 
 
-# ------------------ EXAMPLE ------------------
+# ================== KONKRET EKSEMPEL ==================
 
-x1 = [2, 1, -1]
-x2 = [1, 0, 1]
-x3 = [1, 1, -2]
-v  = [0, 1, -3]
+if __name__ == "__main__":
+    x1 = [2, 1, -1]
+    x2 = [1, 0, 1]
+    x3 = [1, 1, -2]
+    v  = [0, 1, -3]
 
-span_checker([x1, x2, x3], v)
+    span_checker([x1, x2, x3], v)
