@@ -1,6 +1,14 @@
+"""Eigenvector Computation via RREF Module.
+
+Computes eigenvectors by solving (A - λI)x = 0 using Gaussian elimination (RREF).
+Provides step-by-step solution process for eigenvalue problems.
+
+Keywords:
+    eigenvector, RREF, Gaussian elimination, eigenspace, characteristic equation,
+    nullspace, linear systems
+"""
 from sympy import Matrix, symbols, pprint, Rational
 
-# Keywords: diagonalization, eigenvectors, RREF
 
 def eigenvector_via_rref(A, lam):
     """

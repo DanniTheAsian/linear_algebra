@@ -1,4 +1,14 @@
+"""Cramer's Rule Solver Module.
+
+Solves square linear systems Ax = b using Cramer's Rule.
+Works only when det(A) ≠ 0 (unique solution exists).
+
+Keywords:
+    Cramer's rule, linear systems, determinant method, unique solution,
+    matrix equations, non-singular matrix
+"""
 from sympy import Matrix, Rational
+
 
 def solve_cramers_rule(A: Matrix, b: Matrix, show_steps=True):
     """

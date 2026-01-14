@@ -1,6 +1,14 @@
+"""Linear System Analysis and Classification Module.
+
+Analyzes and classifies linear systems by comparing number of equations and variables.
+Determines whether a system is underdetermined, overdetermined, or square.
+
+Keywords:
+    linear systems, classification, underdetermined, overdetermined,
+    rank, system analysis, matrix dimensions
+"""
 from sympy import Matrix
 
-# Keywords: linear systems, consistent, inconsistent, overdetermined, underdetermined
 
 def analyze_linear_system(A):
     """

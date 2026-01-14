@@ -1,3 +1,11 @@
+"""Scalar Multiplication Module.
+
+Performs scalar multiplication on matrices, scaling all entries by a given scalar value.
+
+Keywords:
+    scalar multiplication, matrix scaling, scalar product,
+    matrix operations, linear algebra
+"""
 from typing import List, Union
 
 # Keywords: scalar multiplication, matrix algebra

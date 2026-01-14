@@ -1,4 +1,14 @@
+"""REF Analysis (Exam Style) Module.
+
+Computes REF in examination style with manual pivot operations.
+Matches typical textbook/exam conventions with explicit step tracking.
+
+Keywords:
+    REF, row echelon form, Gaussian elimination, manual reduction,
+    pivot normalization, row operations
+"""
 from sympy import Matrix, symbols
+
 
 def ref_analyze(A):
     """
@@ -72,8 +82,8 @@ def ref_analyze(A):
 
 if __name__ == "__main__":
     A = [
-        [1, -2, 3],
-        [2, -1, 0]
+        [2, 1, 1],
+        [3, 7, -2]
     ]
 
     ref_analyze(A)

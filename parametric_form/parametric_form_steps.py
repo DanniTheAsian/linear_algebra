@@ -1,3 +1,12 @@
+"""Parametric Form Solution Generator Module.
+
+Generates parametric solutions from RREF by identifying pivot and free variables.
+Expresses solution as linear combination of parameter vectors.
+
+Keywords:
+    parametric form, free variables, pivot variables, parameter,
+    RREF, solution representation, vector form
+"""
 from sympy import Matrix, symbols
 
 # Keywords: parametric form, free variables, lead variables

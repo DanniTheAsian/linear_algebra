@@ -1,4 +1,14 @@
+"""Matrix Inverse Computation via Gauss-Jordan Module.
+
+Computes matrix inverses using Gauss-Jordan elimination on [A | I] augmented matrix.
+Provides step-by-step verification of invertibility.
+
+Keywords:
+    matrix inverse, Gauss-Jordan, RREF, invertible matrix, singular matrix,
+    identity matrix, augmented matrix
+"""
 from sympy import Matrix, eye
+
 
 def inverse_with_steps(A: Matrix):
     """

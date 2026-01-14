@@ -1,6 +1,13 @@
+"""Eigenvalue Computation Module.
+
+Computes eigenvalues of square matrices with their algebraic multiplicities.
+
+Keywords:
+    eigenvalue, characteristic polynomial, eigenvalue problem, linear algebra,
+    matrix analysis, spectral analysis
+"""
 from sympy import Matrix
 
-# Keywords: eigenvalues, characteristic equation
 
 def eigenvalues_matrix(matrix):
     A = Matrix(matrix)

@@ -1,6 +1,14 @@
+"""Linear Transformation Helper Module.
+
+Computes T(y) using linearity when y = a*x1 + b*x2 by solving
+a system and using T(y) = a*T(x1) + b*T(x2).
+
+Keywords:
+    linear transformation, linearity, basis vectors, linear combination,
+    vector decomposition, transformation computation
+"""
 from sympy import Matrix, symbols
 
-# Keywords: linear transformation, linearity, basis vectors
 
 def linear_transformation_helper(x1, x2, y, Tx1, Tx2):
     """

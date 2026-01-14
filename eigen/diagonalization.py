@@ -1,6 +1,14 @@
+"""Matrix Diagonalization Module.
+
+Attempts to diagonalize a square matrix into A = PDP^(-1) form,
+where P contains eigenvectors and D is the diagonal eigenvalue matrix.
+
+Keywords:
+    diagonalization, eigenvector matrix, eigenvalue matrix, matrix similarity,
+    similarity transformation, spectral decomposition
+"""
 from sympy import Matrix
 
-# Keywords: diagonalization, eigenvalues, eigenvectors
 
 def diagonalize_matrix(matrix):
     """

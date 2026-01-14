@@ -1,6 +1,14 @@
+"""Eigenvector Computation Module.
+
+Computes eigenvectors for each eigenvalue of a square matrix.
+Returns eigenvalues with algebraic multiplicity and associated eigenvectors.
+
+Keywords:
+    eigenvector, eigenvalue, eigenspace, eigenvector basis,
+    spectral decomposition, linear algebra
+"""
 from sympy import Matrix
 
-# Keywords: eigenvectors, eigenvalues
 
 def eigenvectors_matrix(matrix):
     """

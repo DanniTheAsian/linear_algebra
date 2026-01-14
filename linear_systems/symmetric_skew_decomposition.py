@@ -1,6 +1,14 @@
+"""Symmetric and Skew-Symmetric Matrix Decomposition Module.
+
+Decomposes any square matrix A into symmetric S and skew-symmetric W parts:
+A = S + W, where S = (A+A^T)/2 and W = (A-A^T)/2.
+
+Keywords:
+    symmetric matrix, skew-symmetric matrix, matrix decomposition,
+    transpose, matrix algebra, square matrix
+"""
 from sympy import Matrix
 
-# Keywords: symmetric matrix, skew-symmetric matrix, decomposition, matrix algebra, transponering
 
 def symmetric_skew_decomposition(A):
     """

@@ -1,4 +1,14 @@
+"""Linear System Solver via RREF Module.
+
+Solves linear systems Ax = b using Gauss-Jordan elimination (RREF).
+Determines consistency and provides solutions in matrix and parametric form.
+
+Keywords:
+    linear system, RREF, Gaussian elimination, consistency, free variables,
+    parametric solution, augmented matrix
+"""
 from sympy import Matrix, symbols, simplify
+
 
 def solve_linear_system_rref(A):
     """

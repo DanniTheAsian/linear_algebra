@@ -1,4 +1,13 @@
-# Keywords: back substitution, upper triangular matrix
+"""Back Substitution Solver Module.
+
+Solves upper triangular systems Ux = b using back substitution algorithm.
+Computes solution by solving from bottom equation upward.
+
+Keywords:
+    back substitution, upper triangular, triangular system, Gaussian elimination,
+    row reduction, forward substitution
+"""
+
 
 def back_substitution(U, b):
     """

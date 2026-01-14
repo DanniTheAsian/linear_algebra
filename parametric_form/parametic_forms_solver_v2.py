@@ -1,4 +1,14 @@
+"""Parametric Solution Generator for Single Equations Module.
+
+Generates parametric solutions for single linear equations with multiple variables.
+Showcases both algebraic and matrix-based approaches.
+
+Keywords:
+    parametric solution, free variables, parameter, linear equation,
+    vector form, parametric representation
+"""
 from sympy import symbols, Eq, solve
+
 
 def parametric_solution_from_equation(equation, variables):
     """

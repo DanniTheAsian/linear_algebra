@@ -1,6 +1,12 @@
+"""Determinant Computation Module.
+
+Computes the determinant of square matrices and checks invertibility.
+
+Keywords:
+    determinant, invertible, matrix, square matrix, linear algebra
+"""
 from sympy import Matrix
 
-# Keywords: determinant, invertible, matrix
 
 def determinant_matrix(matrix):
     """

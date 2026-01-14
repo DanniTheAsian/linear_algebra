@@ -1,6 +1,14 @@
+"""Linear System Solution Classification Module.
+
+Classifies a linear system based on rank analysis:
+unique solution, infinitely many solutions, or no solution.
+
+Keywords:
+    number of solutions, unique solution, infinite solutions, no solution,
+    rank, consistency, RREF
+"""
 from sympy import Matrix
 
-# Keywords: number of solutions, unique solution, infinite solutions, no solution
 
 def classify_system(A, b):
     """

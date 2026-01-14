@@ -1,9 +1,16 @@
+"""Adjugate Matrix and Inverse Computation Module.
+
+Computes adjugate matrices via cofactors and solves matrix equations using
+adjugate-based matrix inverse: A^(-1) = (1/det(A)) * adj(A).
+
+Keywords:
+    adjugate, adjoint, cofactor, matrix inverse, determinant method,
+    inverse formula, cofactor matrix
+"""
 from sympy import Matrix, Rational
 
-# ============================================================
-# ADJUGATE (GENEREL, VIA COFACTORS)
-# ============================================================
 
+# Code below
 def adjugate_general(A: Matrix) -> Matrix:
     """
     Computes adj(A) = cofactor(A)^T for any square matrix A.

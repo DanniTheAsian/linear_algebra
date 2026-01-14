@@ -1,6 +1,13 @@
-from sympy import Matrix, symbols, simplify
+"""Linear System Case Analysis Module.
 
-# Symboler
+Analyzes parametric linear systems to determine solution existence
+for different parameter values using symbolic computation.
+
+Keywords:
+    case analysis, parametric system, parameter values, conditional solution,
+    symbolic computation, REF
+"""
+from sympy import Matrix, symbols, simplify
 a, b = symbols("a b")
 x1, x2 = symbols("x1 x2")
 

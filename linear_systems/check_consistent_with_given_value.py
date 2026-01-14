@@ -1,4 +1,14 @@
+"""Solution Verification Module.
+
+Verifies whether a given candidate solution satisfies a system of equations
+by substituting into each equation.
+
+Keywords:
+    solution verification, equation checking, candidate solution,
+    linear equations, consistency checking
+"""
 from sympy import symbols, Eq, simplify
+
 
 def check_candidate_solution(equations, candidate, var_order=None, verbose=True):
     """

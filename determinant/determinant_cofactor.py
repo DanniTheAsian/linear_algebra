@@ -1,6 +1,15 @@
+"""Determinant via Cofactor Expansion Module.
+
+Computes determinants using cofactor (Laplace) expansion along rows or columns.
+This method is particularly useful for understanding determinant computation
+and for symbolic computations.
+
+Keywords:
+    determinant, cofactor expansion, Laplace expansion, cofactor,
+    row expansion, column expansion, minor, adjugate
+"""
 from sympy import Matrix
 
-# Keywords: determinant, cofactor, Laplace expansion, adjungeret matrix
 
 def determinant_cofactor_expansion(A, axis="col", index=0):
     """

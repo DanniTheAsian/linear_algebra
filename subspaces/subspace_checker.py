@@ -1,8 +1,4 @@
-from sympy import Matrix
-
-# Keywords: subspace, span
-
-def is_subspace_span(vectors):
+\"\"\"Subspace Span Checker Module.\n\nVerifies that the span of vectors forms a valid subspace and checks\nspan properties and characteristics.\n\nKeywords:\n    subspace, span, vector space, closure, linear combination,\n    dimension, subspace properties\n\"\"\"\nfrom sympy import Matrix\n\n\ndef is_subspace_span(vectors):
     """
     Span(vectors) er altid et underrum (hvis vektorerne har samme dimension)
     """

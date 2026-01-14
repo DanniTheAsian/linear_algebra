@@ -1,6 +1,14 @@
+"""Eigenvector Verification Module.
+
+Verifies whether a given vector is an eigenvector of a matrix and
+finds the corresponding eigenvalue using Av = λv equation.
+
+Keywords:
+    eigenvector, eigenvalue, eigenvector verification, Av=λv,
+    linear transformation, matrix eigenanalysis
+"""
 from sympy import Matrix
 
-# Keywords: eigenvector, eigenvalue
 
 def verify_eigenvector(A, v):
     """

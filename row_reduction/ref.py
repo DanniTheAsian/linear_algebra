@@ -1,4 +1,14 @@
+"""REF (Row Echelon Form) Solver Module.
+
+Converts augmented matrices to REF and analyzes linear system solutions.
+Provides step-by-step row reduction and identifies pivot columns.
+
+Keywords:
+    REF, row echelon form, Gaussian elimination, row reduction,
+    augmented matrix, back substitution, pivot
+"""
 from sympy import Matrix, symbols
+
 
 def ref_solve(augmented):
     """

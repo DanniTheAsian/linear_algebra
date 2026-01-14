@@ -1,6 +1,14 @@
+"""Matrix Dimension Compatibility Checker Module.
+
+Checks whether matrix products and multiplications are defined based on dimensions.
+Explains dimension requirements for multiplication.
+
+Keywords:
+    matrix dimensions, dimension compatibility, matrix multiplication,
+    dimension rules, incompatible matrices
+"""
 from sympy import Matrix
 
-# Keywords: matrix dimensions, matrix multiplication
 
 def dimension_checker(A=None, B=None, x=None):
     """

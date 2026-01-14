@@ -1,3 +1,12 @@
+"""Matrix Equation Solver Module.
+
+Solves matrix equations of the form (X1 * A * X2)^{T,-1} = B^{T,-1}
+by isolating A using transpose and inverse rules.
+
+Keywords:
+    matrix equation, matrix inverse, transpose, matrix algebra,
+    symbolic computation, isolating variables
+"""
 from sympy import Matrix, eye, Rational
 
 

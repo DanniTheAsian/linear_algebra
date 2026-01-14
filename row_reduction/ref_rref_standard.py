@@ -1,4 +1,14 @@
+"""REF and RREF Standard Form Module.
+
+Computes both REF and RREF of augmented matrices with detailed output.
+Provides parametric solution representation for systems with free variables.
+
+Keywords:
+    REF, RREF, Gaussian elimination, Gauss-Jordan, parametric solution,
+    free variables, pivot variables
+"""
 from sympy import Matrix, symbols
+
 
 def ref_and_rref(A):
     rows, cols = A.shape
@@ -72,9 +82,9 @@ def ref_and_rref(A):
 
 if __name__ == "__main__":
     A = Matrix([
-        [10,20],
-        [50, 30],
-        [30,30],
+        [2, 1,1],
+        [3,7,-2],
+        
 
     ])
 

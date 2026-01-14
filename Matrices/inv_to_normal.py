@@ -1,4 +1,14 @@
+"""Matrix Transformation and Inverse Extraction Module.
+
+Solves for matrix A from inverse expressions like (2A)^T = M^(-1)
+using matrix algebra rules and transformations.
+
+Keywords:
+    matrix inverse, transpose, matrix equation, symbolic computation,
+    matrix algebra, transformation rules
+"""
 from sympy import Matrix, Rational
+
 
 def find_A_from_inverse_expression(M):
     """

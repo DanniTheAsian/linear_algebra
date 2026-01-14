@@ -1,8 +1,15 @@
-# import af libraries
+"""Augmented Matrix Creation and Solution Module.
+
+Creates augmented matrices from user input and computes REF/RREF solutions
+for linear systems with interactive user interface.
+
+Keywords:
+    augmented matrix, REF, RREF, linear systems, Gaussian elimination,
+    Gauss-Jordan, user input, matrix row reduction
+"""
 import numpy as np 
 from sympy import Matrix, pprint
 
-# Keywords: augmented matrix, linear systems
 
 def main():
 

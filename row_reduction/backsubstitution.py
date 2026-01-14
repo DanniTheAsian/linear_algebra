@@ -1,6 +1,14 @@
+"""Back Substitution with RREF Module.
+
+Solves augmented matrices in REF using back substitution algorithm
+with symbolic computation.
+
+Keywords:
+    back substitution, REF, upper triangular, row reduction,
+    symbolic solution, linear systems
+"""
 from sympy import Matrix, symbols
 
-# Keywords: back substitution, REF
 
 def back_substitution(U):
     """

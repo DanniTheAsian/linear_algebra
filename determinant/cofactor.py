@@ -1,8 +1,13 @@
+"""Cofactor and Adjugate Matrix Module.
+
+Computes cofactors and adjugate (adjoint) matrices using cofactor expansion.
+The adjugate matrix is useful for computing matrix inverses.
+
+Keywords:
+    cofactor, adjugate, adjoint, matrix inverse, minor, determinant
+"""
 from sympy import Matrix
 
-# ============================================================
-# GENEREL ADJUGATE VIA COFACTOR-DEFINITION
-# ============================================================
 
 def cofactor(A: Matrix, i: int, j: int):
     """

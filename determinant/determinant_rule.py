@@ -1,6 +1,15 @@
-from sympy import symbols, Matrix, simplify
+"""Determinant Rules and Properties Module.
 
-# Keywords: determinant, matrix rules
+Demonstrates and verifies determinant properties such as:
+- Row/column scalar multiplication
+- Row/column swaps
+- Row operations and their effect on determinants
+
+Keywords:
+    determinant, matrix rules, row operations, scalar multiplication,
+    determinant properties, matrix transformation, linear algebra
+"""
+from sympy import symbols, Matrix, simplify
 
 # Definér symboler
 a, b, c, p, q, r, x, y, z = symbols('a b c p q r x y z')

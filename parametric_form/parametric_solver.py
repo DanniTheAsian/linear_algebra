@@ -1,3 +1,12 @@
+"""Parametric Solution Solver Module.
+
+Generates parametric solutions from linear equations using both
+algebraic manipulation and RREF methods.
+
+Keywords:
+    parametric solution, free parameter, linear equation,
+    parameter representation, symbolic solution
+"""
 from sympy import symbols, Eq, solve, Matrix
 
 # Keywords: parametric solution, free variables

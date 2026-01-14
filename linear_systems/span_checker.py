@@ -1,6 +1,14 @@
+"""Vector Span Membership Checker Module.
+
+Determines whether a target vector is in the span of given basis vectors
+by checking if it can be written as a linear combination.
+
+Keywords:
+    span, linear combination, basis, subspace, vector representation,
+    span membership, linear independence
+"""
 from sympy import Matrix, symbols
 
-# Keywords: span, linear combination, basis
 
 def span_checker(vectors, target):
     """

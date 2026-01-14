@@ -1,4 +1,14 @@
+"""Vector Equation Converter Module.
+
+Transforms linear systems into vector equation form:
+x1*v1 + x2*v2 + ... = b
+
+Keywords:
+    vector equation, linear system, coefficient vectors, column vectors,
+    vector representation, matrix-vector equation
+"""
 from sympy import Matrix, symbols
+
 
 def system_to_vector_equation(A):
     """

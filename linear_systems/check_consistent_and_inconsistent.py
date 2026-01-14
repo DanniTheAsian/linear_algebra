@@ -1,6 +1,16 @@
+"""Linear System Consistency Analysis Module.
+
+Analyzes linear systems to determine consistency and rank relationships.
+Classifies solutions based on rank(A) vs rank([A|b]).
+
+Keywords:
+    consistency, inconsistent system, rank analysis, augmented matrix,
+    RREF, solution classification
+"""
 from sympy import Matrix, symbols
 
-# -------- INDSÆT AUGMENTED MATRIX --------
+
+# Insert main code below
 A = Matrix([
     [1, 3, 1, 1, 8],
     [2, -2, 1,2, 8],

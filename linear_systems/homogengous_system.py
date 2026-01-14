@@ -1,6 +1,14 @@
+"""Homogeneous System Analysis Module.
+
+Analyzes homogeneous systems Ax = 0 to determine solution types:
+trivial solution only vs. infinitely many solutions.
+
+Keywords:
+    homogeneous system, trivial solution, nontrivial solution, nullspace,
+    rank-nullity, RREF, free variables
+"""
 from sympy import Matrix
 
-# Keywords: homogeneous system, trivial solution, nontrivial solution
 
 def analyze_homogeneous_system(A):
     """

@@ -1,6 +1,14 @@
+"""Triangular Matrix Eigenvalue Extraction Module.
+
+Extracts eigenvalues directly from triangular matrices, where eigenvalues
+are the diagonal entries. Includes characteristic polynomial computation.
+
+Keywords:
+    eigenvalue, triangular matrix, diagonal entries, upper triangular,
+    characteristic polynomial, matrix analysis
+"""
 from sympy import Matrix, symbols, det, pprint
 
-# Keywords: eigenvalues, triangular matrix
 
 def eigenvalues_upper_triangular(U):
     """

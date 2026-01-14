@@ -1,6 +1,14 @@
+"""Polynomial Interpolation via Linear Systems Module.
+
+Finds interpolating polynomials through given points by solving
+Vandermonde systems of linear equations.
+
+Keywords:
+    polynomial interpolation, Vandermonde matrix, Lagrange interpolation,
+    fitting, linear systems, polynomial fitting
+"""
 from sympy import Matrix, symbols, pprint
 
-# Keywords: polynomial interpolation, Vandermonde matrix
 
 def polynomial_interpolation(points):
     """

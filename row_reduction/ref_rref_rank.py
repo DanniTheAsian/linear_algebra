@@ -1,8 +1,16 @@
+"""REF, RREF and Rank Analysis Module.
+
+Converts augmented matrices to both REF and RREF forms.
+Computes rank of coefficient and augmented matrices for solution classification.
+
+Keywords:
+    REF, RREF, rank, Gaussian elimination, Gauss-Jordan, rank-nullity,
+    solution classification
+"""
 from sympy import Matrix, symbols
 
-# Keywords: REF, RREF, rank, Gaussian elimination
 
-# -------- INDSÆT AUGMENTED MATRIX --------
+# Insert code below
 A = Matrix([
     [1,-1,0,0,160],
     [0,1,-1,0, -40],
