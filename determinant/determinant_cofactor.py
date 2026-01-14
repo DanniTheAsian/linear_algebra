@@ -114,8 +114,8 @@ def inverse_entry(A, i, j, detA=None):
 
 A = Matrix([
     [1, 2, -1],
-    [3, 1, 1],
-    [0, 4, 7]
+    [3,1,1],
+    [0,4,7]
 ])
 
 print("Matrix A:")

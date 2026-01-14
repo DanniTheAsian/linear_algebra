@@ -71,11 +71,9 @@ def ref_analyze(A):
             print(f"x{j+1}")
 
 if __name__ == "__main__":
-    # EKSEMPEL FRA DIT BILLEDE
     A = [
-        [1, 1, 0],
-        [2, 3, 0],
-        [3, -2, 0]
+        [1, -2, 3],
+        [2, -1, 0]
     ]
 
     ref_analyze(A)
